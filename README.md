@@ -2,6 +2,27 @@
 
 给 [DeepSeek Harness](https://github.com/deepseek-ai)（DSH）加一个 **批量/并发制造 token 消耗** 的工具：`token_burn`。
 
+## 🚀 一句话安装（推荐）
+
+把下面这**一整段**复制，粘贴给你的 DSH 对话发送即可：
+
+```
+帮我安装 DSH 插件 dsh-token-burner，步骤：
+1. 把仓库克隆到临时目录：git clone --depth 1 https://ghproxy.net/https://github.com/crychic-Mortis/dsh-token-burner.git
+   （如果失败，改用 https://github.com/crychic-Mortis/dsh-token-burner.git）
+2. 进入克隆出来的目录，运行：node install.mjs --profile desktop
+3. 装好后提醒我重启 DSH
+```
+
+也可以在终端里直接跑一行：
+
+```bash
+git clone --depth 1 https://ghproxy.net/https://github.com/crychic-Mortis/dsh-token-burner.git && cd dsh-token-burner && node install.mjs --profile desktop
+```
+
+> 注意：`--profile desktop` 是默认 profile 名；你的 profile 若叫别的名字，换成对应值。
+> 大陆网络建议用上面的 `ghproxy.net` 镜像地址。
+
 它一次并发发起 N 个**真实的** LLM 生成请求，每个请求让模型生成大量文本
 （`maxTokens` 拉满 + 引导长输出），用于：
 
