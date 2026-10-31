@@ -1,0 +1,13 @@
+# dsh-token-burner —— 插件自带的 bundle patch
+# 安装方式同 dsh-session-delete：profile 的 dsh.profile.bundles 里列出包名，
+# 或直接在 profile 的 cordis.patch.yml 里 insert 同一行（本机即此装法）。
+
+- insert:
+    - id: token-burner
+      name: dsh-token-burner
+      config:
+        defaultConcurrency: 8
+        defaultRequests: 16
+        defaultMaxTokens: 8192
+        maxConcurrency: 64
+        maxRequests: 512
