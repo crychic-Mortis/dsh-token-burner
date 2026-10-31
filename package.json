@@ -1,0 +1,25 @@
+{
+  "name": "dsh-token-burner",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DSH 插件：并发调用 LLM 批量制造 token 消耗，用于压测 / 触发限流 / 测计费上限。",
+  "license": "MIT",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "install.mjs",
+    "install.cmd",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
