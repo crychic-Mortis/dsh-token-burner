@@ -8,6 +8,14 @@
       config:
         defaultConcurrency: 8
         defaultRequests: 16
-        defaultMaxTokens: 8192
+        defaultMaxTokens: 16384
+        defaultRounds: 3
         maxConcurrency: 64
         maxRequests: 512
+        maxRounds: 16
+        defaultRecheckTimes: 1000
+        maxRecheckTimes: 10000
+        recheckConcurrency: 8
+        maxRecheckConcurrency: 32
+        # 每次请求前插一个随机数，让 prompt cache 命不中
+        cacheBust: true

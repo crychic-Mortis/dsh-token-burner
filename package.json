@@ -1,9 +1,9 @@
 {
   "name": "dsh-token-burner",
-  "version": "1.0.0",
+  "version": "2.4.0",
   "private": true,
   "type": "module",
-  "description": "DSH 插件：并发调用 LLM 批量制造 token 消耗，用于压测 / 触发限流 / 测计费上限。",
+  "description": "DSH 插件：并发 + 多轮追问 + 对话反复审阅，成倍制造 token 消耗（含缓存击穿），用于压测 / 触发限流 / 测计费上限。",
   "license": "MIT",
   "main": "index.js",
   "exports": {

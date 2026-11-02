@@ -8,7 +8,7 @@ if not errorlevel 1 (
   goto done
 )
 
-set "DSH_EXE=%LOCALAPPDATA%ProgramsDeepSeek HarnessDeepSeek Harness.exe"
+set "DSH_EXE=%LOCALAPPDATA%\Programs\DeepSeek Harness\DeepSeek Harness.exe"
 if exist "%DSH_EXE%" (
   set "ELECTRON_RUN_AS_NODE=1"
   "%DSH_EXE%" "%PLUGIN_DIR%install.mjs" %*
